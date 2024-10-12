@@ -1,0 +1,48 @@
+//Example 1
+
+var users = [
+    {name:'karthik',age:25,Hobbies:'playing volley ball'},
+    {name:'Nithin',age:24,Hobbies:'Eating'},
+    {name:'Reddy',age:35,Hobbies:'Daily walking in the morning'},
+    {name:'yogi',age:15,Hobbies:'Eating',
+}]
+var names = users.map(user => {
+    return user;
+});
+console.log(names);
+
+
+
+//Example 2 filter even numbers using arrow function
+
+
+var numbers=[1,4,6,9,11,16,35];
+var evenNumbers=numbers.filter(num=>num%2==0);
+console.log(`This are the even numbers:${evenNumbers}`);
+
+
+//Example 3 calculate operators using arrow function
+var a=10;
+var b=20;
+var calculate=[
+    (a,b)=>a+b,
+    (a,b)=>a-b,
+    (a,b)=>a*b,
+    (a,b)=>a%b
+];
+
+
+calculate.forEach((Element) => {
+    console.log(`Result:${Element(a,b)}`);
+});
+
+
+//example 4 finding the maximum value using arrow function
+
+
+var numbers=[50,30,40,20,100];
+var maxNumber = numbers.reduce((max,current)=>(current>max?current:max),numbers[0]);
+console.log(`max Number:${maxNumber}`);
+
+
+
